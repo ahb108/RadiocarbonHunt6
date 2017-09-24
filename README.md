@@ -1,2 +1,3 @@
-# RadiocarbonHunt6
-Identify and extract radiocarbon dates from published archaeological reports
+# RadiocarbonHunt
+Pybossa crowd-sourcing project to collect radiocarbon dates from Swiss
+fieldwork reports. 
