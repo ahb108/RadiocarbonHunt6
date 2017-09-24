@@ -134,17 +134,23 @@ task.
                     class="glyphicon glyphicon-book"></i> Community Help</a>
         </div>
     </div>
-    <p>Report supplied courtesy of the Archaeology Data Service. See <a href="http://archaeologydataservice.ac.uk/advice/termsOfUseAndAccess" target="_blank">terms and conditions</a>.</p>
-    <!-- The pdf section -->
     <div class="row">
-        <div id="mypdf">
-            <iframe id="pdfImage" width="75%" height="400px" class="pdf" src=""></iframe>
-        </div>
+    	<h4><br>1. Open the fieldwork report below in a new browser window:</h4>
+    	<i>Authors: </i><span id="authors">#</span>
+    	<br>
+    	<i>Journal: </i><span id="journal">#</span>
+    	<br>
+    	<i>Volume/Year: </i><span id="volume">#</span>
+    	<br>
+		<i>Link: </i><a id="pdfImage" target="_blank" title="Opens in a new window" href="">Get report here</a>
+    	<br>
+    	(if the above link does not work, you might try looking up the paper in the journal issue's <a id="issueurl" target="_blank" title="Opens in a new window" href="">table of contents</a>).
+    	</p>
     </div>
-    <!-- End of pdf section -->
+
     <!-- The data entry section using html table -->
     <div class="row">
-        <h4>Input any radiocarbon dates in this report:</h4>
+        <h4>2. Input any radiocarbon dates in this report:</h4>
         <div id="rcTable" class="handsontable"></div>
         <button class="btn btn-success btn-answer" value='Yes'>
             Submit your dates
@@ -390,7 +396,11 @@ task.
 		if (!$.isEmptyObject(task)) {
 			$("#question").html(task.info.question);
 			$('#task-id').html(task.id);
-			$("#pdfImage").attr('src', task.info.url_b);
+			$('#authors').html(task.info.authors);
+			$('#journal').html(task.info.journal);
+			$('#volume').html(task.info.volume);
+			$("a#issueurl").attr("href", task.info.issueurl);
+			$("a#pdfImage").attr("href", task.info.url_b);
 			var data = [[]];
 			var config = {
 				data : data,
