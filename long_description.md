@@ -20,7 +20,8 @@ collectively to enhance the value of these reports in all sorts of
 other important ways.
 
 For this particular project, we have already conducted a first check
-of several groups of open access reports and identified those reports
+of several groups of open access reports from the Swiss e-periodica
+journal portal and identified those reports
 that are very likely to contain radiocarbon dates. Although a few may
 have no useful details, most should do. We now ask for your help with searching
 inside a particular report and entering any dates you find into a
